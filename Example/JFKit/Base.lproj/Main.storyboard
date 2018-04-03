@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,37 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2k6-CJ-x9C">
+                                <rect key="frame" x="16" y="587" width="31" height="30"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="tapCamera:" destination="whP-gf-Uak" eventType="touchUpInside" id="GDj-PW-UDO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsp-t4-GGJ">
+                                <rect key="frame" x="328" y="587" width="31" height="30"/>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="tapPhoto:" destination="whP-gf-Uak" eventType="touchUpInside" id="juZ-nx-obN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-I5-8bB">
+                                <rect key="frame" x="8" y="20" width="359" height="467"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="2k6-CJ-x9C" secondAttribute="bottom" constant="50" id="35R-DW-k1e"/>
+                            <constraint firstAttribute="trailing" secondItem="Bsp-t4-GGJ" secondAttribute="trailing" constant="16" id="CO4-Jh-Q8I"/>
+                            <constraint firstItem="2k6-CJ-x9C" firstAttribute="top" secondItem="l3e-I5-8bB" secondAttribute="bottom" constant="100" id="IAt-rY-sQz"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="Bsp-t4-GGJ" secondAttribute="bottom" constant="50" id="OFY-rI-sFI"/>
+                            <constraint firstItem="l3e-I5-8bB" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="SyB-Wg-yVW"/>
+                            <constraint firstItem="l3e-I5-8bB" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="8" id="ftf-JF-JbC"/>
+                            <constraint firstItem="2k6-CJ-x9C" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="jix-w3-ykQ"/>
+                            <constraint firstAttribute="trailing" secondItem="l3e-I5-8bB" secondAttribute="trailing" constant="8" id="sed-LF-nB8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

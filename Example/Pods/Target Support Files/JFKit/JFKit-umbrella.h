@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "JFImagePickerKit.h"
 
 FOUNDATION_EXPORT double JFKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char JFKitVersionString[];
