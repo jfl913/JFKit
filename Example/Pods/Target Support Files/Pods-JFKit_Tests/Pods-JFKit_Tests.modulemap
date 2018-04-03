@@ -1,0 +1,6 @@
+framework module Pods_JFKit_Tests {
+  umbrella header "Pods-JFKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

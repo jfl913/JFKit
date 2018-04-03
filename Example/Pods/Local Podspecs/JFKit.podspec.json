@@ -1,0 +1,22 @@
+{
+  "name": "JFKit",
+  "version": "0.1.0",
+  "summary": "A short description of JFKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jfl913/JFKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jfl913": "lijunfeng@u51.com"
+  },
+  "source": {
+    "git": "https://github.com/jfl913/JFKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JFKit/Classes/**/*"
+}
